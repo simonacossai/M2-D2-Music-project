@@ -30,6 +30,15 @@ nav a:hover{
     color:#22AAA1!important;
     transition: all ease .7s;
 }
+.card-img-top{
+    transition: all ease .5s;
+
+}
+.card-img-top:hover {
+    transition: all ease .5s;
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+}
 .navbar-toggler-icon{
     color:#F2EFEA!important;
 }
