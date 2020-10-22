@@ -28,3 +28,21 @@ window.onload= function (){
     let about = document.querySelector(".songs");
     about.innerHTML=albums+" album covers in this web page";
    }
+
+   let links = document.querySelectorAll(".breadcrumb-item a");
+   let active = document.querySelector('.active');
+   for(let i=0; i<links.length; i++){
+    links[i].addEventListener("click", function(event){
+        active.classList.remove("active");
+        links[i].classList.add("active");
+    }
+    )}
+
+
+
+    function SomeDeleteRowFunction() {
+        // event.target will be the input element.
+        var td = event.target.parentNode; 
+        var tr = td.parentNode; // the row to be removed
+        tr.parentNode.removeChild(tr);
+  }
